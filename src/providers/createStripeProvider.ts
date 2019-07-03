@@ -4,7 +4,7 @@ import * as Stripe from 'stripe';
 import { stripeToken } from './../constants';
 import { StripeOptions } from './../interfaces';
 
-export function stripeProvider(options: StripeOptions): Provider<Stripe> {
+export function createStripeProvider(options: StripeOptions): Provider<Stripe> {
   const stripeClient = new Stripe(options.apiKey, options.version);
 
   return {

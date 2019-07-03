@@ -1,1 +1,1 @@
-export * from './stripeProvider';
+export * from './createStripeProvider';
