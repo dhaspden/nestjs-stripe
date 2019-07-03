@@ -1,0 +1,50 @@
+{
+  "name": "nestjs-stripe",
+  "version": "0.1.0",
+  "description": "Provides an injectable Stripe client to nestjs modules",
+  "repository": "git@github.com:dhaspden/nestjs-stripe.git",
+  "author": {
+    "name": "Dylan Aspden",
+    "url": "http://github.com/dhaspden"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "test:cov": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nestjs/common": "6.0.0",
+    "@nestjs/core": "6.0.0",
+    "reflect-metadata": "0.1.12",
+    "rimraf": "2.6.2",
+    "rxjs": "6.3.3",
+    "stripe": "7.4.0"
+  },
+  "devDependencies": {
+    "@nestjs/testing": "6.0.0",
+    "@types/jest": "23.3.13",
+    "@types/node": "10.12.18",
+    "@types/stripe": "6.30.6",
+    "jest": "23.6.0",
+    "prettier": "1.15.3",
+    "ts-jest": "24.0.2",
+    "typescript": "3.4.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
