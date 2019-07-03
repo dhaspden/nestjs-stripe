@@ -6,6 +6,10 @@
 <p align="center">
 	Injectable Stripe client for your nestjs projects
 </p>
+
+<p align="center">
+	<img src="https://circleci.com/gh/dhaspden/nestjs-stripe.svg?style=svg">
+</p>
 </p>
 
 ## Table Of Contents
