@@ -3,12 +3,11 @@ import * as Stripe from 'stripe';
 
 import { stripeToken } from './../constants';
 import { StripeOptions } from './../interfaces';
+import { getStripeClient } from './../util';
 
 export function createStripeProvider(options: StripeOptions): Provider<Stripe> {
-  const stripeClient = new Stripe(options.apiKey, options.version);
-
   return {
     provide: stripeToken,
-    useValue: stripeClient,
+    useValue: getStripeClient(options),
   };
 }

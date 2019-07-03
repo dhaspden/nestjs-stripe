@@ -1,3 +1,3 @@
-export * from './decorators/InjectStripe';
-export * from './interfaces/StripeOptions';
+export * from './decorators';
+export * from './interfaces';
 export * from './StripeModule';
