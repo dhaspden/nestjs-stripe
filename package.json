@@ -8,31 +8,45 @@
     "url": "http://github.com/dhaspden"
   },
   "license": "MIT",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\"",
+    "prebuild": "rimraf lib",
     "test:cov": "jest --coverage",
     "test:watch": "jest --watch",
     "test": "jest"
   },
   "dependencies": {
-    "@nestjs/common": "6.0.0",
-    "@nestjs/core": "6.0.0",
-    "reflect-metadata": "0.1.12",
-    "rimraf": "2.6.2",
-    "rxjs": "6.3.3",
     "stripe": "7.4.0"
   },
   "devDependencies": {
-    "@nestjs/testing": "6.0.0",
-    "@types/jest": "23.3.13",
-    "@types/node": "10.12.18",
+    "@nestjs/common": "6.4.0",
+    "@nestjs/core": "6.4.0",
+    "@nestjs/testing": "6.4.0",
+    "@types/jest": "24.0.15",
+    "@types/node": "12.0.10",
     "@types/stripe": "6.30.6",
-    "jest": "23.6.0",
-    "prettier": "1.15.3",
+    "jest": "24.8.0",
+    "prettier": "1.18.2",
+    "reflect-metadata": "0.1.13",
+    "rimraf": "2.6.3",
+    "rxjs": "6.5.2",
     "ts-jest": "24.0.2",
-    "typescript": "3.4.3"
+    "typescript": "3.5.2"
   },
+  "peerDependencies": {
+    "@nestjs/common": "^6.0.0",
+    "@nestjs/core": "^6.0.0",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^6.0.0"
+  },
+  "keywords": [
+    "nestjs",
+    "stripe",
+    "payment"
+  ],
   "jest": {
     "moduleFileExtensions": [
       "js",
