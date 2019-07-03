@@ -14,6 +14,8 @@
     "build": "tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "prebuild": "rimraf lib",
+    "prepublish:npm": "yarn build",
+    "publish:npm": "yarn publish --access public",
     "test:cov": "jest --coverage",
     "test:watch": "jest --watch",
     "test": "jest"

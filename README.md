@@ -11,6 +11,7 @@
 ## Table Of Contents
 
 - [About](#about)
+- [Installation](#installation)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
 - [License](#license)
@@ -22,6 +23,12 @@
 your nestjs project provides a Stripe client to any class that injects it. This
 lets Stripe be worked into your dependency injection workflow without having to
 do any extra work outside of the initial setup.
+
+## Installation
+
+```bash
+npm install --save nestjs-stripe
+```
 
 ## Getting Started
 
