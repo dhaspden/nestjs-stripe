@@ -1,0 +1,26 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/node:9.11.2
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restores the Yarn package cache if possible
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Install package dependencies
+          command: yarn install --frozen-lockfile
+      - save_cache:
+          name: Saves the Yarn package cache
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ~/.cache/yarn
+      - run:
+          name: Run unit tests with code
+          command: yarn test --collectCoverage=true
+      - store_artifacts:
+          path: coverage
+      - run:
+          name: Build the Typescript files
+          command: yarn build
