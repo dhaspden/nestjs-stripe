@@ -1,6 +1,4 @@
 version: 2.1
-orbs:
-  codecov: codecov/codecov@1.0.2
 jobs:
   build:
     docker:
@@ -20,10 +18,12 @@ jobs:
             - ~/.cache/yarn
       - run:
           name: Run unit tests with code
-          command: yarn test --collectCoverage=true
+          command: yarn test:cov
       - store_artifacts:
           path: coverage
-      - codecov/upload
+      - run:
+          name: Upload test coverage report to Codecov
+          command: yarn codecov
       - run:
           name: Build the Typescript files
           command: yarn build
