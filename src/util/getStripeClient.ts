@@ -13,5 +13,10 @@ export function getStripeClient(options: StripeOptions): Stripe {
     version,
   });
 
-  return new Stripe(options.apiKey, options.version);
+  if (typeof options.requestTelemetry === 'boolean') {
+    // TODO: update this when @types/stripe adds `setTelemetryEnabled`
+    (stripeClient as any).setTelemetryEnabled(options.requestTelemetry);
+  }
+
+  return stripeClient;
 }
