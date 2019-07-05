@@ -2,7 +2,7 @@
   "name": "nestjs-stripe",
   "version": "0.1.0",
   "description": "Provides an injectable Stripe client to nestjs modules",
-  "repository": "git@github.com:dhaspden/nestjs-stripe.git",
+  "repository": "https://github.com/dhaspden/nestjs-stripe",
   "author": {
     "name": "Dylan Aspden",
     "url": "http://github.com/dhaspden"

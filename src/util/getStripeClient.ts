@@ -1,6 +1,6 @@
 import * as Stripe from 'stripe';
 
-import { author, name, version } from './../../package.json';
+import { name, repository, version } from './../../package.json';
 import { StripeOptions } from './../interfaces';
 
 export function getStripeClient(options: StripeOptions): Stripe {
@@ -9,7 +9,7 @@ export function getStripeClient(options: StripeOptions): Stripe {
   // TODO: update this when @types/stripe adds `setAppInfo`
   (stripeClient as any).setAppInfo({
     name,
-    url: author.url,
+    url: repository,
     version,
   });
 
