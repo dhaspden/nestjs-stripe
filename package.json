@@ -22,6 +22,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "https-proxy-agent": "2.2.1",
     "stripe": "7.4.0"
   },
   "devDependencies": {

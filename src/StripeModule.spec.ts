@@ -17,7 +17,7 @@ describe('StripeModule', () => {
   }
 
   describe('forRoot', () => {
-    it('provides the stripe client', async () => {
+    it('should provide the stripe client', async () => {
       const module = await Test.createTestingModule({
         imports: [StripeModule.forRoot({ apiKey })],
       }).compile();
@@ -29,32 +29,36 @@ describe('StripeModule', () => {
   });
 
   describe('forRootAsync', () => {
-    it('can be used with useFactory', async () => {
-      const module = await Test.createTestingModule({
-        imports: [
-          StripeModule.forRootAsync({
-            useFactory: () => ({ apiKey }),
-          }),
-        ],
-      }).compile();
+    describe('when the `useFactory` option is used', () => {
+      it('should provide the stripe client', async () => {
+        const module = await Test.createTestingModule({
+          imports: [
+            StripeModule.forRootAsync({
+              useFactory: () => ({ apiKey }),
+            }),
+          ],
+        }).compile();
 
-      const stripeClient = module.get<Stripe>(stripeToken);
-      expect(stripeClient).toBeDefined();
-      expect(stripeClient).toBeInstanceOf(Stripe);
+        const stripeClient = module.get<Stripe>(stripeToken);
+        expect(stripeClient).toBeDefined();
+        expect(stripeClient).toBeInstanceOf(Stripe);
+      });
     });
 
-    it('can be used with useClass', async () => {
-      const module = await Test.createTestingModule({
-        imports: [
-          StripeModule.forRootAsync({
-            useClass: TestService,
-          }),
-        ],
-      }).compile();
+    describe('when the `useClass` option is used', () => {
+      it('should provide the stripe client', async () => {
+        const module = await Test.createTestingModule({
+          imports: [
+            StripeModule.forRootAsync({
+              useClass: TestService,
+            }),
+          ],
+        }).compile();
 
-      const stripeClient = module.get<Stripe>(stripeToken);
-      expect(stripeClient).toBeDefined();
-      expect(stripeClient).toBeInstanceOf(Stripe);
+        const stripeClient = module.get<Stripe>(stripeToken);
+        expect(stripeClient).toBeDefined();
+        expect(stripeClient).toBeInstanceOf(Stripe);
+      });
     });
   });
 });

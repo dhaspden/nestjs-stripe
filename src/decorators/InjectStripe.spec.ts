@@ -21,9 +21,11 @@ describe('InjectStripe', () => {
     }).compile();
   });
 
-  it('injects the stripe client into the class', () => {
-    const testService = module.get(TestService);
-    expect(testService).toHaveProperty('stripeClient');
-    expect(testService.stripeClient).toBeInstanceOf(Stripe);
+  describe('when decorating a class constructor parameter', () => {
+    it('should inject the stripe client', () => {
+      const testService = module.get(TestService);
+      expect(testService).toHaveProperty('stripeClient');
+      expect(testService.stripeClient).toBeInstanceOf(Stripe);
+    });
   });
 });
