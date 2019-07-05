@@ -8,6 +8,7 @@
     "module": "commonjs",
     "outDir": "./lib",
     "removeComments": true,
+    "resolveJsonModule": true,
     "sourceMap": true,
     "target": "es6"
   },
