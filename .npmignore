@@ -1,3 +1,4 @@
+*.log
 .circleci
 coverage
 node_modules
