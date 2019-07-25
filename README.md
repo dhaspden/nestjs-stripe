@@ -87,6 +87,18 @@ import { StripeModule } from 'nestjs-stripe';
 export class AppModule {}
 ```
 
+## Example
+
+In order to run the example run the following commands in your terminal. The
+expected output of the example is to show that the Stripe client was
+successfully injected into the `AppService`.
+
+```bash
+cd example
+yarn install
+yarn start
+```
+
 ## Contributing
 
 I would greatly appreciate any contributions to make this project better. Please
