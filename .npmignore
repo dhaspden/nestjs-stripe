@@ -1,6 +1,7 @@
 *.log
 .circleci
 coverage
+example
 node_modules
 .editorconfig
 .gitattributes
