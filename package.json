@@ -13,16 +13,13 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "codecov": "codecov",
-    "format": "prettier --write \"src/**/*.ts\"",
+    "format": "prettier --write \"src/**/*.ts\" \"example/**/*.ts\"",
     "prebuild": "rimraf lib",
     "prepublish:npm": "yarn build",
     "publish:npm": "yarn publish --access public",
     "test:cov": "jest --coverage",
     "test:watch": "jest --watch",
     "test": "jest"
-  },
-  "dependencies": {
-    "stripe": "7.4.0"
   },
   "devDependencies": {
     "@nestjs/common": "6.5.2",
@@ -37,6 +34,7 @@
     "reflect-metadata": "0.1.13",
     "rimraf": "2.6.3",
     "rxjs": "6.5.2",
+    "stripe": "7.5.0",
     "ts-jest": "24.0.2",
     "typescript": "3.5.3"
   },
@@ -44,7 +42,8 @@
     "@nestjs/common": "^6.0.0",
     "@nestjs/core": "^6.0.0",
     "reflect-metadata": "^0.1.12",
-    "rxjs": "^6.0.0"
+    "rxjs": "^6.0.0",
+    "stripe": "^7.0.0"
   },
   "keywords": [
     "nestjs",
