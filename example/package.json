@@ -1,0 +1,29 @@
+{
+  "name": "nestjs-stripe-example",
+  "version": "0.0.0",
+  "description": "An example project showing how to use nestjs-stripe",
+  "repository": "https://github.com/dhaspden/nestjs-stripe",
+  "author": {
+    "name": "Dylan Aspden",
+    "url": "http://github.com/dhaspden"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node --transpile-only -r tsconfig-paths/register src/index.ts"
+  },
+  "dependencies": {
+    "@nestjs/common": "6.5.3",
+    "@nestjs/core": "6.5.3",
+    "@nestjs/platform-express": "6.5.3",
+    "reflect-metadata": "0.1.13",
+    "rxjs": "6.5.2",
+    "stripe": "7.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "12.6.8",
+    "@types/stripe": "6.31.6",
+    "ts-node": "8.3.0",
+    "tsconfig-paths": "3.8.0",
+    "typescript": "3.5.3"
+  }
+}
