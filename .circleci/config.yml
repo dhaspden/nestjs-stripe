@@ -5,17 +5,23 @@ jobs:
       - image: circleci/node:10.16.0
     steps:
       - checkout
+      - run:
+          name: Installs Greenkeeper lockfile dependency globally
+          command: sudo yarn global add greenkeeper-lockfile@2
       - restore_cache:
           name: Restores the Yarn package cache if possible
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
           name: Install package dependencies
-          command: yarn install --frozen-lockfile
+          command: yarn install
       - save_cache:
           name: Saves the Yarn package cache
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
             - ~/.cache/yarn
+      - run:
+          name: Updates the lockfile through Greenkeeper
+          command: greenkeeper-lockfile-update
       - run:
           name: Run unit tests with code
           command: yarn test:cov
@@ -27,3 +33,6 @@ jobs:
       - run:
           name: Build the Typescript files
           command: yarn build
+      - run:
+          name: Uploads the lockfile through Greenkeeper
+          command: greenkeeper-lockfile-upload
