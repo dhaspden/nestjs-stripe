@@ -5,6 +5,12 @@ jobs:
       - image: circleci/node:10.16.0
     steps:
       - checkout
+      - run:
+          name: Installs Greenkeeper lockfile dependency globally
+          command: sudo yarn global add greenkeeper-lockfile@2
+      - run:
+          name: Updates the lockfile through Greenkeeper
+          command: greenkeeper-lockfile-update
       - restore_cache:
           name: Restores the Yarn package cache if possible
           key: dependency-cache-{{ checksum "package.json" }}
