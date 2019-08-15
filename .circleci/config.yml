@@ -4,6 +4,15 @@ jobs:
     docker:
       - image: circleci/node:10.16.0
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - '88:6f:95:4d:b2:1a:5e:25:cc:d5:7f:ac:25:93:2e:11'
+      - run:
+          name: Setup git author email address
+          command: git config user.email "$USER_EMAIL"
+      - run:
+          name: Setup git author name
+          command: git config user.name "$USER_NAME"
       - checkout
       - run:
           name: Installs Greenkeeper lockfile dependency globally
