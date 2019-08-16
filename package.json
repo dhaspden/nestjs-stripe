@@ -27,7 +27,7 @@
     "@nestjs/testing": "6.5.3",
     "@types/jest": "24.0.16",
     "@types/node": "12.7.2",
-    "@types/stripe": "6.31.15",
+    "@types/stripe": "6.31.17",
     "codecov": "3.5.0",
     "jest": "24.8.0",
     "prettier": "1.18.2",
