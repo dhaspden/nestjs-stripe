@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@nestjs/common": "6.5.3",
-    "@nestjs/core": "6.5.3",
+    "@nestjs/core": "6.6.0",
     "@nestjs/testing": "6.5.3",
     "@types/jest": "24.0.18",
     "@types/node": "12.7.2",
