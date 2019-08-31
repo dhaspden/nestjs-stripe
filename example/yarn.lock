@@ -23,10 +23,10 @@
     optional "0.1.4"
     uuid "3.3.3"
 
-"@nestjs/platform-express@6.5.3":
-  version "6.5.3"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-6.5.3.tgz#0260f2c13e5914dc121dbd3a221afb5305b9f813"
-  integrity sha512-c5n4XUbDDmF6MfBGYWM1jtsIDpVsOfOQtf3S0w3IeJNqm7dnmVAvO2Jk+RsYpt50tN4NAXntM3YTuTDqMb9uiA==
+"@nestjs/platform-express@6.6.0":
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-6.6.0.tgz#cc32e85e8cc04016dd4c6998bf096988ee200921"
+  integrity sha512-lr+S77CX1cJr1f0dtWS/iuJzaSnVcq7O+iLAdV34XzK1qEx+nozfzFL/VgtatgnB7/A+G/SEwrGEvMWtcfL//A==
   dependencies:
     body-parser "1.19.0"
     cors "2.8.5"
@@ -57,10 +57,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.2.tgz#c4e63af5e8823ce9cc3f0b34f7b998c2171f0c44"
   integrity sha512-dyYO+f6ihZEtNPDcWNR1fkoTDf3zAK3lAABDze3mz6POyIercH0lEUawUFXlG8xaQZmm1yEBON/4TsYv/laDYg==
 
-"@types/stripe@6.31.19":
-  version "6.31.19"
-  resolved "https://registry.yarnpkg.com/@types/stripe/-/stripe-6.31.19.tgz#a025873f4df17babf8f8dccf1926c70b05452618"
-  integrity sha512-6BKI5LZbtE5JSHxrXGMbbuMYgqWNqxsL/k/hDjVCekX4Xx8SJ1tqM1oWf3q8WF/ktsExc/7dZrG600+syxCbjg==
+"@types/stripe@6.31.21":
+  version "6.31.21"
+  resolved "https://registry.yarnpkg.com/@types/stripe/-/stripe-6.31.21.tgz#9f39c967350104c2a69423d7b16ed6509b832629"
+  integrity sha512-qz5PrM6UCdBrpOYXUi7+pTICiYk10u41dWM2tYwpYcb7+C1SUX7aQ6dBFA4yzrRzNn0SsmCs83xiiIuOMkh6vg==
   dependencies:
     "@types/node" "*"
 
