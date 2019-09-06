@@ -294,22 +294,22 @@
     cli-color "1.4.0"
     uuid "3.3.2"
 
-"@nestjs/core@6.5.3":
-  version "6.5.3"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-6.5.3.tgz#0cfd4388f07f15ab7b49aa0ff7ed594f51446378"
-  integrity sha512-ZhYfH49sVmUUw02qsaGozCFOOehlEABakYzRShyDDq30/2+ek3KpE0DfvA9tXlzX2KVrac2qDTBxMOPoJ+zY+g==
+"@nestjs/core@6.6.7":
+  version "6.6.7"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-6.6.7.tgz#a0cb16157e0c670f714d460ba4a1dde8f4162b1c"
+  integrity sha512-SH3ZiG8+LruM3N1Csp87HocBmfn/BASwHAUkQdQxsNIBJanbOEjIc1HiPxXv0RXZMrXDM2Wt483VxZUtLsetLQ==
   dependencies:
     "@nuxtjs/opencollective" "0.2.2"
     fast-safe-stringify "2.0.6"
     iterare "1.2.0"
     object-hash "1.3.1"
     optional "0.1.4"
-    uuid "3.3.2"
+    uuid "3.3.3"
 
-"@nestjs/testing@6.5.3":
-  version "6.5.3"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.5.3.tgz#fcc2a9ed77ae2f5626e6472e67964a0c401edec6"
-  integrity sha512-W8tPhkNVhmX+jaDu4R7WUOtIl0PK3ZDso434rEm/b1+S6ZRgAKwNVHWM/rwIuTi5+erPTEULtTsZgrXFrzC1sA==
+"@nestjs/testing@6.6.7":
+  version "6.6.7"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.6.7.tgz#ee6df8b3cc1857dba037bbf4ac861b2fbc3bc266"
+  integrity sha512-SKP1aTnTKTKbzL7QqiVmQC3EEZH7javf67GZMuFkIJ5hVCEuc6FEdfV9iyCGH6hC/68ArCa8U8jbxt9+CbyPew==
   dependencies:
     optional "0.1.4"
 
@@ -392,10 +392,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.8.tgz#e469b4bf9d1c9832aee4907ba8a051494357c12c"
   integrity sha512-aX+gFgA5GHcDi89KG5keey2zf0WfZk/HAQotEamsK2kbey+8yGKcson0hbK8E+v0NArlCJQCqMP161YhV6ZXLg==
 
-"@types/node@12.7.2":
-  version "12.7.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.2.tgz#c4e63af5e8823ce9cc3f0b34f7b998c2171f0c44"
-  integrity sha512-dyYO+f6ihZEtNPDcWNR1fkoTDf3zAK3lAABDze3mz6POyIercH0lEUawUFXlG8xaQZmm1yEBON/4TsYv/laDYg==
+"@types/node@12.7.4":
+  version "12.7.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.4.tgz#64db61e0359eb5a8d99b55e05c729f130a678b04"
+  integrity sha512-W0+n1Y+gK/8G2P/piTkBBN38Qc5Q1ZSO6B5H3QmPCUewaiXOo2GCAWZ4ElZCcNhjJuBSUSLGFUJnmlCn5+nxOQ==
 
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
@@ -3773,6 +3773,11 @@ uuid@3.3.2, uuid@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
   integrity sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
+
+uuid@3.3.3:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
+  integrity sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
 
 validate-npm-package-license@^3.0.1:
   version "3.0.4"
