@@ -39,7 +39,7 @@ export class StripeCoreModule {
   }
 
   private static createAsyncProviders(options: StripeAsyncOptions): Provider[] {
-    if (options.useFactory) {
+    if (options.useExisting || options.useFactory) {
       return [this.createAsyncOptionsProvider(options)];
     }
 
@@ -64,7 +64,7 @@ export class StripeCoreModule {
     }
 
     return {
-      inject: [options.useClass],
+      inject: [options.useExisting || options.useClass],
       provide: stripeModuleOptions,
       useFactory: (optionsFactory: StripeOptionsFactory) =>
         optionsFactory.createStripeOptions(),

@@ -1,3 +1,4 @@
+import { Module } from '@nestjs/common';
 import { Test } from '@nestjs/testing';
 import * as Stripe from 'stripe';
 
@@ -15,6 +16,12 @@ describe('StripeModule', () => {
       };
     }
   }
+
+  @Module({
+    exports: [TestService],
+    providers: [TestService],
+  })
+  class TestModule {}
 
   describe('forRoot', () => {
     it('should provide the stripe client', async () => {
@@ -35,6 +42,23 @@ describe('StripeModule', () => {
           imports: [
             StripeModule.forRootAsync({
               useFactory: () => ({ apiKey }),
+            }),
+          ],
+        }).compile();
+
+        const stripeClient = module.get<Stripe>(stripeToken);
+        expect(stripeClient).toBeDefined();
+        expect(stripeClient).toBeInstanceOf(Stripe);
+      });
+    });
+
+    describe('when the `useExisting` option is used', () => {
+      it('should provide the stripe client', async () => {
+        const module = await Test.createTestingModule({
+          imports: [
+            StripeModule.forRootAsync({
+              imports: [TestModule],
+              useExisting: TestService,
             }),
           ],
         }).compile();
