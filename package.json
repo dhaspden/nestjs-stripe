@@ -1,6 +1,6 @@
 {
   "name": "nestjs-stripe",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Provides an injectable Stripe client to nestjs modules",
   "repository": "https://github.com/dhaspden/nestjs-stripe",
   "author": {
