@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@types/node": "12.7.4",
-    "@types/stripe": "6.31.27",
+    "@types/stripe": "6.31.28",
     "ts-node": "8.3.0",
     "tsconfig-paths": "3.8.0",
     "typescript": "3.5.3"
