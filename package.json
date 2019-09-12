@@ -38,7 +38,7 @@
     "rimraf": "2.7.0",
     "rxjs": "6.5.2",
     "stripe": "7.9.0",
-    "ts-jest": "24.0.2",
+    "ts-jest": "24.1.0",
     "typescript": "3.5.3"
   },
   "peerDependencies": {
