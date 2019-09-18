@@ -23,10 +23,10 @@
     optional "0.1.4"
     uuid "3.3.3"
 
-"@nestjs/platform-express@6.6.7":
-  version "6.6.7"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-6.6.7.tgz#8258a301b1b0ac99204d3623c6431edd16619f50"
-  integrity sha512-cflh5DqKF3ofhs2wWKij4JJ25fxJB0/04jLzX2WZDssU8FFPzlLg/mU+VoJqar6VT9taZl/Q6LnRGSjiRnXhUw==
+"@nestjs/platform-express@6.7.0":
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-6.7.0.tgz#064925ac068dd812680f3b6d48bfb3b480956dab"
+  integrity sha512-ZEpSg1fGSeIYdEhFSAcX77KuukZLQdVvKG90vx5Pgr/FDQmAbopMy0Fwy9bMnlRuQ76Wd06Cqb7GrUAx0v6dwA==
   dependencies:
     body-parser "1.19.0"
     cors "2.8.5"
