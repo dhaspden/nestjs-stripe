@@ -25,9 +25,9 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@nestjs/common": "6.7.0",
-    "@nestjs/core": "6.7.0",
-    "@nestjs/testing": "6.7.0",
+    "@nestjs/common": "6.7.2",
+    "@nestjs/core": "6.7.2",
+    "@nestjs/testing": "6.7.2",
     "@types/jest": "24.0.18",
     "@types/node": "12.7.5",
     "@types/stripe": "6.32.2",
@@ -42,8 +42,8 @@
     "typescript": "3.5.3"
   },
   "peerDependencies": {
-    "@nestjs/common": "^6.7.0",
-    "@nestjs/core": "^6.7.0",
+    "@nestjs/common": "^6.7.2",
+    "@nestjs/core": "^6.7.2",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.0.0",
     "stripe": "^7.9.1"
