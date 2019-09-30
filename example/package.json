@@ -12,7 +12,7 @@
     "start": "ts-node --transpile-only -r tsconfig-paths/register src/index.ts"
   },
   "dependencies": {
-    "@nestjs/common": "6.7.2",
+    "@nestjs/common": "6.8.0",
     "@nestjs/core": "6.7.2",
     "@nestjs/platform-express": "6.7.2",
     "reflect-metadata": "0.1.13",
