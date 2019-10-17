@@ -1,3 +1,4 @@
+import * as ProxyAgent from 'https-proxy-agent';
 import * as Stripe from 'stripe';
 
 import { getStripeClient } from './getStripeClient';
@@ -15,7 +16,7 @@ describe('getStripeClient', () => {
   describe('when `httpProxy` is a string', () => {
     it('should call stripe.setHttpAgent', () => {
       const spy = jest.spyOn(Stripe.prototype as any, 'setHttpAgent');
-      const httpProxy = 'https://google.ca';
+      const httpProxy = new ProxyAgent('https://google.ca');
       getStripeClient({
         apiKey,
         httpProxy,

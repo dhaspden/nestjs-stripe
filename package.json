@@ -66,5 +66,8 @@
     },
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "dependencies": {
+    "https-proxy-agent": "3.0.0"
   }
 }

@@ -1,3 +1,4 @@
+import * as ProxyAgent from 'https-proxy-agent';
 import * as Stripe from 'stripe';
 
 import { StripeOptions } from './../interfaces';
@@ -13,7 +14,7 @@ export function getStripeClient(options: StripeOptions): Stripe {
     version: packageJson.version,
   });
 
-  if (typeof options.httpProxy === 'string') {
+  if (options.httpProxy instanceof ProxyAgent) {
     stripeClient.setHttpAgent(options.httpProxy);
   }
 
