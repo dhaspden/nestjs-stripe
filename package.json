@@ -25,7 +25,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@nestjs/common": "6.8.3",
+    "@nestjs/common": "6.8.4",
     "@nestjs/core": "6.8.3",
     "@nestjs/testing": "6.8.3",
     "@types/jest": "24.0.19",
