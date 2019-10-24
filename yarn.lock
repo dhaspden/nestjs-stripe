@@ -325,10 +325,10 @@
     object-hash "2.0.0"
     uuid "3.3.3"
 
-"@nestjs/testing@6.8.3":
-  version "6.8.3"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.8.3.tgz#457bedec42a3de13c0c436b85c987e35e47fe22e"
-  integrity sha512-nhiXfvnfJ0ARzpOJ+7btnHBxTh82oQX6+/G7EnQEBB/A1jFfE+sbB7Pdt6s999prNOQmdw/XdnORV67u9BwNkw==
+"@nestjs/testing@6.8.4":
+  version "6.8.4"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.8.4.tgz#263517a673f1b56b62c9fe7c39ff91796a95218a"
+  integrity sha512-g9YcxkzyQjcBey/Jp24pAxrN+RFRDikyPHutyl9PrbI5G0gf1pMuIU4MKL1eaccJ2+uN5hUiQVgazQscrFtwww==
   dependencies:
     optional "0.1.4"
 
