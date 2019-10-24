@@ -305,19 +305,19 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@nestjs/common@6.8.3":
-  version "6.8.3"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.8.3.tgz#55984a93ffeb092364788ed23834fa53bbf6116f"
-  integrity sha512-MQY05kocVTJx5UdLeE5gpBjiymXnKYo1rme3ejCaeMFFkiXmPcgkGquYNegCFy+SHXwsq9AW/gcoD0hkVn0Z6g==
+"@nestjs/common@6.8.4":
+  version "6.8.4"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.8.4.tgz#1aac37f154462fc833e1411883a61121fb9b8ab2"
+  integrity sha512-4adKpi4bpiR2sqRYPgTp7oy63mQJGA/hAc2gxzJRA2vKQrLD60GC22e6lJgaEL+Ls32QutTLDWq5NMN/+UmaFA==
   dependencies:
     axios "0.19.0"
     cli-color "2.0.0"
     uuid "3.3.3"
 
-"@nestjs/core@6.8.3":
-  version "6.8.3"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-6.8.3.tgz#b7def83df2845fbfce89ea3079ea6323e2551dca"
-  integrity sha512-hgpmqwbJaOFEuFYTAQe/Csu+kcxBfqlsctv6np9tg/TqDvNFMrowt3Snvtpjpz55fdvUfUh8JY7YBwoaUTo6ZA==
+"@nestjs/core@6.8.4":
+  version "6.8.4"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-6.8.4.tgz#a583f9b4fb38ad0e663c0b478902c7b7390d8b8d"
+  integrity sha512-q4bS5QMB0djkjxUs6PhcQaJAJdKgRF3672ohsQirL0jojik4jKJG8qxjTdgE6Ywvh9KdannLCDAxINOLg1L1vg==
   dependencies:
     "@nuxtjs/opencollective" "0.2.2"
     fast-safe-stringify "2.0.7"
