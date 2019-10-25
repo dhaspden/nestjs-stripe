@@ -28,7 +28,7 @@
     "@nestjs/common": "6.8.3",
     "@nestjs/core": "6.8.3",
     "@nestjs/testing": "6.8.3",
-    "@types/jest": "24.0.19",
+    "@types/jest": "24.0.20",
     "@types/node": "12.11.1",
     "@types/stripe": "7.10.3",
     "codecov": "3.6.1",
