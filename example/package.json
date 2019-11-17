@@ -12,18 +12,18 @@
     "start": "ts-node --transpile-only -r tsconfig-paths/register src/index.ts"
   },
   "dependencies": {
-    "@nestjs/common": "6.8.3",
-    "@nestjs/core": "6.8.3",
-    "@nestjs/platform-express": "6.8.3",
+    "@nestjs/common": "6.10.1",
+    "@nestjs/core": "6.10.1",
+    "@nestjs/platform-express": "6.10.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3",
-    "stripe": "7.10.0"
+    "stripe": "7.13.0"
   },
   "devDependencies": {
-    "@types/node": "12.11.1",
-    "@types/stripe": "7.10.3",
-    "ts-node": "8.4.1",
+    "@types/node": "12.12.8",
+    "@types/stripe": "7.13.4",
+    "ts-node": "8.5.2",
     "tsconfig-paths": "3.9.0",
-    "typescript": "3.6.4"
+    "typescript": "3.7.2"
   }
 }
