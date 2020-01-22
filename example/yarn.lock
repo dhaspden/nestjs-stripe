@@ -46,22 +46,10 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
-"@types/node@*":
-  version "12.6.8"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.8.tgz#e469b4bf9d1c9832aee4907ba8a051494357c12c"
-  integrity sha512-aX+gFgA5GHcDi89KG5keey2zf0WfZk/HAQotEamsK2kbey+8yGKcson0hbK8E+v0NArlCJQCqMP161YhV6ZXLg==
-
 "@types/node@13.1.4":
   version "13.1.4"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.1.4.tgz#4cfd90175a200ee9b02bd6b1cd19bc349741607e"
   integrity sha512-Lue/mlp2egZJoHXZr4LndxDAd7i/7SQYhV0EjWfb/a4/OZ6tuVwMCVPiwkU5nsEipxEf7hmkSU7Em5VQ8P5NGA==
-
-"@types/stripe@7.13.19":
-  version "7.13.19"
-  resolved "https://registry.yarnpkg.com/@types/stripe/-/stripe-7.13.19.tgz#2762b2da5a16e2504d37679923ca633443c5280d"
-  integrity sha512-pUZfv5rX/86/2PCduZC2PHUpjS0R2qLvqDP9lx/Fs+YpekL7vv6spfrPQmbE2mkXQnACY6PMPU/pt3ilU1Sj6g==
-  dependencies:
-    "@types/node" "*"
 
 accepts@~1.3.7:
   version "1.3.7"
