@@ -1,10 +1,5 @@
-import * as ProxyAgent from 'https-proxy-agent';
+import Stripe from 'stripe';
 
-export interface StripeOptions {
+export interface StripeOptions extends Partial<Stripe.StripeConfig> {
   readonly apiKey: string;
-  readonly httpProxy?: ProxyAgent;
-  readonly maxNetworkRetries?: number;
-  readonly requestTelemetry?: boolean;
-  readonly requestTimeout?: number;
-  readonly version?: string;
 }

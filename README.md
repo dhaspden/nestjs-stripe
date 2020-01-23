@@ -64,7 +64,7 @@ custom decorator
 ```typescript
 import { Injectable } from '@nestjs/common';
 import { InjectStripe } from 'nestjs-stripe';
-import * as Stripe from 'stripe';
+import Stripe from 'stripe';
 
 @Injectable()
 export class AppService {

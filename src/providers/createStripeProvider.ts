@@ -1,5 +1,5 @@
 import { Provider } from '@nestjs/common';
-import * as Stripe from 'stripe';
+import Stripe from 'stripe';
 
 import { stripeToken } from './../constants';
 import { StripeOptions } from './../interfaces';

@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
-import * as Stripe from 'stripe';
+import Stripe from 'stripe';
 
 import { StripeModule } from './../StripeModule';
 import { InjectStripe } from './InjectStripe';

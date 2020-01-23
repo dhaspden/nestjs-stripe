@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { Test } from '@nestjs/testing';
-import * as Stripe from 'stripe';
+import Stripe from 'stripe';
 
 import { stripeToken } from './constants';
 import { StripeOptions, StripeOptionsFactory } from './interfaces';

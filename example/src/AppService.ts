@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import * as Stripe from 'stripe';
+import Stripe from 'stripe';
 
 import { InjectStripe } from './../../src';
 
