@@ -14,7 +14,7 @@
   "dependencies": {
     "@nestjs/common": "6.10.13",
     "@nestjs/core": "6.11.1",
-    "@nestjs/platform-express": "6.10.13",
+    "@nestjs/platform-express": "6.11.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.4",
     "stripe": "8.7.0"
