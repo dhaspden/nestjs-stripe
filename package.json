@@ -34,7 +34,7 @@
     "jest": "24.9.0",
     "prettier": "1.19.1",
     "reflect-metadata": "0.1.13",
-    "rimraf": "3.0.0",
+    "rimraf": "3.0.1",
     "rxjs": "6.5.4",
     "stripe": "8.7.0",
     "ts-jest": "24.3.0",
