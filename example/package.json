@@ -17,7 +17,7 @@
     "@nestjs/platform-express": "6.11.4",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.4",
-    "stripe": "8.8.0"
+    "stripe": "8.9.0"
   },
   "devDependencies": {
     "@types/node": "13.5.1",
