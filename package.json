@@ -29,7 +29,7 @@
     "@nestjs/core": "6.11.4",
     "@nestjs/testing": "6.11.4",
     "@types/jest": "25.1.1",
-    "@types/node": "13.5.1",
+    "@types/node": "13.5.2",
     "codecov": "3.6.2",
     "jest": "25.1.0",
     "prettier": "1.19.1",
