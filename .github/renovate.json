@@ -1,0 +1,5 @@
+{
+  "automerge": true,
+  "extends": ["config:js-lib"],
+  "semanticCommits": true
+}
