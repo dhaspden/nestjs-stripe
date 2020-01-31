@@ -3446,10 +3446,10 @@ strip-final-newline@^2.0.0:
   resolved "https://registry.yarnpkg.com/strip-final-newline/-/strip-final-newline-2.0.0.tgz#89b852fb2fcbe936f6f4b3187afb0a12c1ab58ad"
   integrity sha512-BrpvfNAE3dcvq7ll3xVumzjKjZQ5tI1sEUIKr3Uoks0XUl45St3FlatVqef9prk4jRDzhW6WZg+3bk93y6pLjA==
 
-stripe@8.9.0:
-  version "8.9.0"
-  resolved "https://registry.yarnpkg.com/stripe/-/stripe-8.9.0.tgz#9c6fde43ca89045545fd1a725a5f1cca31aac781"
-  integrity sha512-8uLJrQSzcq7i6ZqGu12kDiRelgQRPvK+Ypg9814Uzv1kagQ2AWotY6NcRwoyC1A49WUi62J8GrwhCQAimNpK0w==
+stripe@8.12.0:
+  version "8.12.0"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-8.12.0.tgz#59af76668a2be884d6d7c940d99e22fd78fb7147"
+  integrity sha512-XFjrjSn96AYr/9aU35bKY5zI99opLBpYPjYLJ3m6ArlOAPvJk810+6pOZSPRQw1Sc5lFtJ+/acOhg3oBXKm72Q==
   dependencies:
     "@types/node" ">=8.1.0"
     qs "^6.6.0"
