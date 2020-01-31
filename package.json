@@ -27,7 +27,7 @@
   "devDependencies": {
     "@nestjs/common": "6.11.5",
     "@nestjs/core": "6.11.5",
-    "@nestjs/testing": "6.11.4",
+    "@nestjs/testing": "6.11.5",
     "@types/jest": "25.1.1",
     "@types/node": "13.5.3",
     "codecov": "3.6.3",
