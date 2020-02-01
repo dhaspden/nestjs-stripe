@@ -16,7 +16,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "codecov": "codecov",
-    "format": "prettier --write \"src/**/*.ts\" \"example/**/*.ts\"",
+    "format": "prettier --write '**/*.md' '**/*.json' '**/*.ts' '**/*.yml' .prettierrc",
     "prebuild": "rimraf lib",
     "prepublish:npm": "yarn build",
     "publish:npm": "yarn publish --access public",

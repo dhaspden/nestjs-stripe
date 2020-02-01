@@ -1,38 +1,111 @@
-version: 2.1
-jobs:
-  build:
+---
+executors:
+  node:
     docker:
       - image: circleci/node:10.16.0
+    working_directory: ~/app
+jobs:
+  build:
+    executor: node
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          command: yarn build
+          name: Build the Typescript files
+      - persist_to_workspace:
+          paths:
+            - app
+          root: ~/
+  check:
+    executor: node
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          command: |
+            npx prettier --check \
+              '**/*.md' \
+              '**/*.json' \
+              '**/*.ts' \
+              '**/*.yml' \
+              .prettierrc
+          name: Check that each file is formatted appropriately
+  publish:
+    executor: node
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          name: Add authentication for the npm registry
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+      - run:
+          name: Publish the project to npm
+          command: npm publish --access public
+  setup:
+    executor: node
     steps:
       - add_ssh_keys:
           fingerprints:
-            - '88:6f:95:4d:b2:1a:5e:25:cc:d5:7f:ac:25:93:2e:11'
+            - 88:6f:95:4d:b2:1a:5e:25:cc:d5:7f:ac:25:93:2e:11
       - run:
-          name: Setup git author email address
           command: git config --global user.email "$USER_EMAIL"
+          name: Setup git author email address
       - run:
-          name: Setup git author name
           command: git config --global user.name "$USER_NAME"
+          name: Setup git author name
       - checkout
       - restore_cache:
+          key: dependency-cache-{{ checksum "yarn.lock" }}
           name: Restores the Yarn package cache if possible
-          key: dependency-cache-{{ checksum "yarn.lock" }}
       - run:
-          name: Install package dependencies
           command: yarn install
+          name: Install package dependencies
       - save_cache:
-          name: Saves the Yarn package cache
           key: dependency-cache-{{ checksum "yarn.lock" }}
+          name: Saves the Yarn package cache
           paths:
             - ~/.cache/yarn
+      - persist_to_workspace:
+          paths:
+            - app
+          root: ~/
+  test:
+    executor: node
+    steps:
+      - attach_workspace:
+          at: ~/
       - run:
-          name: Run unit tests with code
           command: yarn test:cov
+          name: Run unit tests with code
       - store_artifacts:
           path: coverage
       - run:
-          name: Upload test coverage report to Codecov
           command: yarn codecov
-      - run:
-          name: Build the Typescript files
-          command: yarn build
+          name: Upload test coverage report to Codecov
+version: 2.1
+workflows:
+  build_test_and_publish:
+    jobs:
+      - setup
+      - build:
+          requires:
+            - setup
+      - check:
+          requires:
+            - setup
+      - test:
+          requires:
+            - setup
+      - publish:
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /^v.*/
+          requires:
+            - build
+            - check
+            - test
+          type: approval
+  version: 2
