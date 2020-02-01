@@ -12,9 +12,6 @@
     <a href="https://codecov.io/gh/dhaspden/nestjs-stripe">
       <img src="https://codecov.io/gh/dhaspden/nestjs-stripe/branch/master/graph/badge.svg" />
     </a>
-    <a href="https://greenkeeper.io/">
-      <img src="https://badges.greenkeeper.io/dhaspden/nestjs-stripe.svg">
-    </a>
   </p>
 </p>
 
