@@ -18,8 +18,8 @@ describe('getStripeClient', () => {
         url: 'url',
         version: 'version',
       },
-      timeout: 10000,
       telemetry: false,
+      timeout: 10000,
     });
     expect(stripeClient).toBeInstanceOf(Stripe);
   });
