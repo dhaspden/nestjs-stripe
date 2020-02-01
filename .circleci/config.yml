@@ -16,13 +16,13 @@ jobs:
       - checkout
       - restore_cache:
           name: Restores the Yarn package cache if possible
-          key: dependency-cache-{{ checksum "package.json" }}
+          key: dependency-cache-{{ checksum "yarn.lock" }}
       - run:
           name: Install package dependencies
           command: yarn install
       - save_cache:
           name: Saves the Yarn package cache
-          key: dependency-cache-{{ checksum "package.json" }}
+          key: dependency-cache-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
       - run:
