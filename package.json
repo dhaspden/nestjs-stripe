@@ -25,27 +25,27 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@nestjs/common": "6.10.13",
-    "@nestjs/core": "6.10.13",
-    "@nestjs/testing": "6.10.13",
-    "@types/jest": "24.0.25",
-    "@types/node": "13.1.4",
-    "codecov": "3.6.1",
-    "jest": "24.9.0",
+    "@nestjs/common": "6.11.5",
+    "@nestjs/core": "6.11.5",
+    "@nestjs/testing": "6.11.5",
+    "@types/jest": "25.1.1",
+    "@types/node": "13.5.3",
+    "codecov": "3.6.3",
+    "jest": "25.1.0",
     "prettier": "1.19.1",
     "reflect-metadata": "0.1.13",
-    "rimraf": "3.0.0",
+    "rimraf": "3.0.1",
     "rxjs": "6.5.4",
-    "stripe": "8.4.1",
-    "ts-jest": "24.2.0",
-    "typescript": "3.7.4"
+    "stripe": "8.12.0",
+    "ts-jest": "25.1.0",
+    "typescript": "3.7.5"
   },
   "peerDependencies": {
     "@nestjs/common": "^6.7.2",
     "@nestjs/core": "^6.7.2",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.0.0",
-    "stripe": "^7.9.1"
+    "stripe": "^8.0.0"
   },
   "keywords": [
     "nestjs",
@@ -66,7 +66,5 @@
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
   },
-  "dependencies": {
-    "https-proxy-agent": "4.0.0"
-  }
+  "dependencies": {}
 }
