@@ -560,7 +560,12 @@
     jest-diff "^25.1.0"
     pretty-format "^25.1.0"
 
-"@types/node@13.5.3", "@types/node@>=8.1.0":
+"@types/node@13.7.0":
+  version "13.7.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.7.0.tgz#b417deda18cf8400f278733499ad5547ed1abec4"
+  integrity sha512-GnZbirvmqZUzMgkFn70c74OQpTTUcCzlhQliTzYjQMqg+hVKcDnxdL19Ne3UdYzdMA/+W3eb646FWn/ZaT1NfQ==
+
+"@types/node@>=8.1.0":
   version "13.5.3"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.5.3.tgz#37f1f539b7535b9fb4ef77d59db1847a837b7f17"
   integrity sha512-ZPnWX9PW992w6DUsz3JIXHaSb5v7qmKCVzC3km6SxcDGxk7zmLfYaCJTbktIa5NeywJkkZDhGldKqDIvC5DRrA==
@@ -998,10 +1003,10 @@ co@^4.6.0:
   resolved "https://registry.yarnpkg.com/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
   integrity sha1-bqa989hTrlTMuOR7+gvz+QMfsYQ=
 
-codecov@3.6.3:
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/codecov/-/codecov-3.6.3.tgz#2ea98e71111312cf102b51f17b8c07b78bda4ee6"
-  integrity sha512-wxUdYS+ajCbbWcDUUiJL8H3q03Sn/R53wmLbJ4ixnLsudqNdBg+mttFlSuSCtJsl1PsJbeIUkjh4vBLfh2WhgQ==
+codecov@3.6.4:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/codecov/-/codecov-3.6.4.tgz#c993a58704ad5f15dcdd6aa3c3af22070c69eb18"
+  integrity sha512-R9zEcTR5/IDLepdGUHAkRMZOIKhBE1NRGS1N2H96zhBOskhdW9Q22GtYYyecbZL1aheU00D2F21nNBGRISui0A==
   dependencies:
     argv "0.0.2"
     ignore-walk "3.0.3"
