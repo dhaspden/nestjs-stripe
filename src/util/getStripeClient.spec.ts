@@ -10,17 +10,13 @@ describe('getStripeClient', () => {
     expect(stripeClient).toBeInstanceOf(Stripe);
   });
 
-  it('should return the stripe client with customize', () => {
+  it('should return the stripe client with custom options', () => {
     const stripeClient = getStripeClient({
       apiKey,
-      appInfo: {
-        name: 'name',
-        url: 'url',
-        version: 'version',
-      },
       telemetry: false,
       timeout: 10000,
     });
+
     expect(stripeClient).toBeInstanceOf(Stripe);
   });
 });
