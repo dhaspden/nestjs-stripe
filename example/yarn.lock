@@ -50,15 +50,10 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
-"@types/node@13.7.0":
+"@types/node@13.7.0", "@types/node@>=8.1.0":
   version "13.7.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.7.0.tgz#b417deda18cf8400f278733499ad5547ed1abec4"
   integrity sha512-GnZbirvmqZUzMgkFn70c74OQpTTUcCzlhQliTzYjQMqg+hVKcDnxdL19Ne3UdYzdMA/+W3eb646FWn/ZaT1NfQ==
-
-"@types/node@>=8.1.0":
-  version "13.5.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.5.3.tgz#37f1f539b7535b9fb4ef77d59db1847a837b7f17"
-  integrity sha512-ZPnWX9PW992w6DUsz3JIXHaSb5v7qmKCVzC3km6SxcDGxk7zmLfYaCJTbktIa5NeywJkkZDhGldKqDIvC5DRrA==
 
 accepts@~1.3.7:
   version "1.3.7"
@@ -787,10 +782,10 @@ strip-bom@^3.0.0:
   resolved "https://registry.yarnpkg.com/strip-bom/-/strip-bom-3.0.0.tgz#2334c18e9c759f7bdd56fdef7e9ae3d588e68ed3"
   integrity sha1-IzTBjpx1n3vdVv3vfprj1YjmjtM=
 
-stripe@8.12.0:
-  version "8.12.0"
-  resolved "https://registry.yarnpkg.com/stripe/-/stripe-8.12.0.tgz#59af76668a2be884d6d7c940d99e22fd78fb7147"
-  integrity sha512-XFjrjSn96AYr/9aU35bKY5zI99opLBpYPjYLJ3m6ArlOAPvJk810+6pOZSPRQw1Sc5lFtJ+/acOhg3oBXKm72Q==
+stripe@8.15.0:
+  version "8.15.0"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-8.15.0.tgz#da0a585e77ee297fd3fba9dc4860398767e2ce39"
+  integrity sha512-SlLc7FHrK4U0WEvwUMRLVr/PH3gVxVbeDvOkh+eNi63Zsa+P3ELd+pIGwlzJW3QP0efWucpC2AF1sLf6+37pyA==
   dependencies:
     "@types/node" ">=8.1.0"
     qs "^6.6.0"
