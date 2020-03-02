@@ -448,14 +448,14 @@
     chalk "^3.0.0"
 
 "@nestjs/common@^6.0.0":
-  version "6.11.8"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.11.8.tgz#2c7acb2aa312f111b39bedb8015891a7b6916834"
-  integrity sha512-Tnd0Uikrthv2Y2RVTEZvA8f9P2HE+G31tfq1tA7fNLz1af7YeU/gMBtvDlemStMKUOx26/aSP2IRCvKeYwRCFQ==
+  version "6.11.9"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.11.9.tgz#1697bed82c0772b97f2d3dd28e463dd8e905b622"
+  integrity sha512-ZxoV0zDZbYovZJ/SQGGu4tkUKkSyEYCfUmHIGptrRq4E3cS2xq1jfXt95ShMnO0FopLfdlfojORHvldGh2db9A==
   dependencies:
     axios "0.19.2"
     cli-color "2.0.0"
-    tslib "1.10.0"
-    uuid "3.4.0"
+    tslib "1.11.1"
+    uuid "7.0.1"
 
 "@nestjs/core@^6.0.0":
   version "6.11.9"
