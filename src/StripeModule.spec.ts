@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { Test } from '@nestjs/testing';
 import Stripe from 'stripe';
 
-import { stripeToken } from './constants';
+import { stripeToken, apiVersion } from './constants';
 import { StripeOptions, StripeOptionsFactory } from './interfaces';
 import { StripeModule } from './StripeModule';
 
@@ -12,6 +12,7 @@ describe('StripeModule', () => {
   class TestService implements StripeOptionsFactory {
     createStripeOptions(): StripeOptions {
       return {
+        apiVersion,
         apiKey,
       };
     }
@@ -26,7 +27,7 @@ describe('StripeModule', () => {
   describe('forRoot', () => {
     it('should provide the stripe client', async () => {
       const module = await Test.createTestingModule({
-        imports: [StripeModule.forRoot({ apiKey })],
+        imports: [StripeModule.forRoot({ apiKey, apiVersion })],
       }).compile();
 
       const stripeClient = module.get<Stripe>(stripeToken);
@@ -41,7 +42,7 @@ describe('StripeModule', () => {
         const module = await Test.createTestingModule({
           imports: [
             StripeModule.forRootAsync({
-              useFactory: () => ({ apiKey }),
+              useFactory: () => ({ apiKey, apiVersion }),
             }),
           ],
         }).compile();

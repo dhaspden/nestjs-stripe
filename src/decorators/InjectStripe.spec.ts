@@ -4,6 +4,7 @@ import Stripe from 'stripe';
 
 import { StripeModule } from './../StripeModule';
 import { InjectStripe } from './InjectStripe';
+import { apiVersion } from '../constants'
 
 describe('InjectStripe', () => {
   const apiKey = 'test';
@@ -16,7 +17,7 @@ describe('InjectStripe', () => {
 
   beforeEach(async () => {
     module = await Test.createTestingModule({
-      imports: [StripeModule.forRoot({ apiKey })],
+      imports: [StripeModule.forRoot({ apiKey, apiVersion })],
       providers: [TestService],
     }).compile();
   });
