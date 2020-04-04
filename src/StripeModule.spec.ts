@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { Test } from '@nestjs/testing';
 import Stripe from 'stripe';
 
-import { stripeToken, apiVersion } from './constants';
+import { apiVersion, stripeToken } from './constants';
 import { StripeOptions, StripeOptionsFactory } from './interfaces';
 import { StripeModule } from './StripeModule';
 
@@ -12,8 +12,8 @@ describe('StripeModule', () => {
   class TestService implements StripeOptionsFactory {
     createStripeOptions(): StripeOptions {
       return {
-        apiVersion,
         apiKey,
+        apiVersion,
       };
     }
   }

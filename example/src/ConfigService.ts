@@ -7,6 +7,7 @@ export class ConfigService {
   public getStripeConfig(): StripeOptions {
     return {
       apiKey: 'secret',
+      apiVersion: '2020-03-02'
     };
   }
 }

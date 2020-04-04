@@ -1,6 +1,6 @@
 import * as Stripe from 'stripe';
 
-import { stripeToken, apiVersion } from './../constants';
+import { apiVersion, stripeToken } from './../constants';
 import { createStripeProvider } from './createStripeProvider';
 
 describe('stripeProvider', () => {

@@ -1,7 +1,7 @@
 import Stripe from 'stripe';
 
+import { apiVersion } from '../constants';
 import { getStripeClient } from './getStripeClient';
-import { apiVersion } from '../constants'
 
 describe('getStripeClient', () => {
   const apiKey = 'test';
@@ -13,8 +13,8 @@ describe('getStripeClient', () => {
 
   it('should return the stripe client with custom options', () => {
     const stripeClient = getStripeClient({
-      apiVersion,
       apiKey,
+      apiVersion,
       telemetry: false,
       timeout: 10000,
     });

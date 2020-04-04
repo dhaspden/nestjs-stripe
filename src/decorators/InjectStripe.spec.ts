@@ -4,7 +4,7 @@ import Stripe from 'stripe';
 
 import { StripeModule } from './../StripeModule';
 import { InjectStripe } from './InjectStripe';
-import { apiVersion } from '../constants'
+import { apiVersion } from './../constants';
 
 describe('InjectStripe', () => {
   const apiKey = 'test';
