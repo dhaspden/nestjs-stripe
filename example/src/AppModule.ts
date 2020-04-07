@@ -1,5 +1,4 @@
 import { Module } from '@nestjs/common';
-
 import { StripeModule } from './../../src';
 import { AppService } from './AppService';
 import { ConfigModule } from './ConfigModule';

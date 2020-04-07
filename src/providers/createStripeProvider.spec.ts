@@ -1,5 +1,4 @@
 import * as Stripe from 'stripe';
-
 import { apiVersion, stripeToken } from './../constants';
 import { createStripeProvider } from './createStripeProvider';
 

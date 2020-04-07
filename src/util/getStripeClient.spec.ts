@@ -1,5 +1,4 @@
 import Stripe from 'stripe';
-
 import { apiVersion } from '../constants';
 import { getStripeClient } from './getStripeClient';
 

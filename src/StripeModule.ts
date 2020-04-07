@@ -1,5 +1,4 @@
 import { DynamicModule, Module } from '@nestjs/common';
-
 import { StripeAsyncOptions, StripeOptions } from './interfaces';
 import { StripeCoreModule } from './StripeCoreModule';
 

@@ -1,5 +1,4 @@
 import { ModuleMetadata, Type } from '@nestjs/common/interfaces';
-
 import { StripeOptions } from './StripeOptions';
 import { StripeOptionsFactory } from './StripeOptionsFactory';
 
