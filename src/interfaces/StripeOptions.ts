@@ -1,5 +1,5 @@
 import Stripe from 'stripe';
 
-export interface StripeOptions extends Partial<Stripe.StripeConfig> {
+export interface StripeOptions extends Stripe.StripeConfig {
   readonly apiKey: string;
 }
