@@ -17,9 +17,11 @@
 
 ## Table Of Contents
 
+- [Table Of Contents](#table-of-contents)
 - [About](#about)
 - [Installation](#installation)
 - [Getting Started](#getting-started)
+- [Example](#example)
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
@@ -49,6 +51,7 @@ import { StripeModule } from 'nestjs-stripe';
   imports: [
     StripeModule.forRoot({
       apiKey: 'my_secret_key',
+      apiVersion: '2020-03-02',
     }),
   ],
 })
@@ -81,12 +84,21 @@ import { StripeModule } from 'nestjs-stripe';
       inject: [ConfigService],
       useFactory: (configService: ConfigService) => ({
         apiKey: configService.get('stripe_key'),
+        apiVersion: '2020-03-02',
       }),
     }),
   ],
 })
 export class AppModule {}
 ```
+
+Read up on the `stripe-node` caveats
+[here](https://github.com/stripe/stripe-node#usage-with-typescript). Due to the
+way `stripe-node` works you can only use the latest version of the Stripe API
+that was published at the time the module version was published. If you wish to
+use an older version of the Stripe API, follow the steps in the above link.
+Because of this, the `apiVersion` field is now required along with the `apiKey`
+field.
 
 ## Example
 
