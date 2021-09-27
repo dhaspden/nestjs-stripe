@@ -51,7 +51,7 @@ import { StripeModule } from 'nestjs-stripe';
   imports: [
     StripeModule.forRoot({
       apiKey: 'my_secret_key',
-      apiVersion: '2020-03-02',
+      apiVersion: '2020-08-27',
     }),
   ],
 })
