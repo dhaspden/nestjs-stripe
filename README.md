@@ -132,4 +132,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - [nestjs](https://nestjs.com)
 - [stripe-node](https://github.com/stripe/stripe-node)
 
-Copyright &copy; 2019 Dylan Aspden
+Copyright &copy; 2021 Dylan Aspden
